@@ -16,7 +16,7 @@ Before submitting an issue, please make sure:
 2. You have done your best to ensure that your issue is NOT a duplicate of one of [the previous issues](https://github.com/alshedivat/al-folio/issues).
 3. Your issue is either a bug (unexpected/undesirable behavior) or a feature request.
 If it is just a question, please ask it in the [Discussions](https://github.com/alshedivat/al-folio/discussions) forum.
-
+  
 When submitting an issue, please make sure to use the appropriate template.
 
 
