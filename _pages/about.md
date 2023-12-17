@@ -1,8 +1,8 @@
 ---
 layout: about
 title: about
-permalink: /
-subtitle: 
+permalink: https://hrsh-venket.github.io/
+subtitle: I like solving problems
 
 profile:
   align: right
