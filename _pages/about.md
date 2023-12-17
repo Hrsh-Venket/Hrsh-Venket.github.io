@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: hrsh.venket@gmail.com
+subtitle: 
 
 profile:
   align: right
