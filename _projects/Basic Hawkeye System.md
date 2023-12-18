@@ -17,5 +17,5 @@ My broad method came down to:
 - Camera calibration and calculating relative position
 - Triangulation and 3D reconstruction
 
-# 2D ball tracking
+### 2D ball tracking
 
