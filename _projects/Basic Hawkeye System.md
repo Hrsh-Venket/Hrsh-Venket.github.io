@@ -19,3 +19,13 @@ My broad method came down to:
 
 ### 2D ball tracking
 
+To track the volleyball in 2D from each of my cameras, I used the Yolo v8 model. It is a pretrained CNN used for object tracking, detection, and segmentation. While it was not specifically trained on volleyball images, I was able to get reasonable tracking for a slow moving volleyball, being detected as a general ‘sports ball’. I then went on to track the centre of the bounding box for each camera.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/1.jpg" title="view 1 animation" class="view 1 animation" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/v2anim.gif" title="view 2 animation" class="img-fluid rounded z-depth-1" %}
+    </div>``
+</div>
