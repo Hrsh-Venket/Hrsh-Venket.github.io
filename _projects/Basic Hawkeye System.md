@@ -21,12 +21,12 @@ My broad method came down to:
 
 To track the volleyball in 2D from each of my cameras, I used the Yolo v8 model. It is a pretrained CNN used for object tracking, detection, and segmentation. While it was not specifically trained on volleyball images, I was able to get reasonable tracking for a slow moving volleyball, being detected as a general ‘sports ball’. I then went on to track the centre of the bounding box for each camera.
 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/Basic Hakeye System/v1anim.gif" title="view 1 animation" class="view 1 animation" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Basic Hakeye System/v1anim.gif" title="view 2 animation" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Basic Hakeye System/v2anim.gif" title="view 2 animation" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -36,12 +36,12 @@ As you can probably tell from the animations above, the ball was not being detec
 
 To solve both of these issues, I used cubic interpolation to estimate the position of the ball between points where it was visible, and by using audio of the ball hitting the floor to check the delay between cameras , I was able to interpolate one video to synchronise position with the other. For the video above for instance, I noticed that there was a 0.55 * 100/60 ms  or approximately 0.91 ms gap between the frames, hence I also interpolated one video to match the other. The below GIFs show the result of this interpolation.
 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/Basic Hakeye System/v1inter.gif" title="view 1 interpolated" class="view 1 animation" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Basic Hakeye System/v1inter.gif" title="view 2 interpolated" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Basic Hakeye System/v2inter.gif" title="view 2 interpolated" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -77,7 +77,7 @@ Note that, I went through some sanity check with this, for instance to check tha
 First I had trouble since a majority of sift points were detected in the patterned ceiling of the area:
 
 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/Basic Hakeye System/sift features.png" title="sift features" class="view 1 animation" %}
     </div>
@@ -85,7 +85,7 @@ First I had trouble since a majority of sift points were detected in the pattern
 
 Then I avoided using these points to compute the homography, which improved the computation.
 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/Basic Hakeye System/sift features corrected.png" title="sift features corrected" %}
     </div>
