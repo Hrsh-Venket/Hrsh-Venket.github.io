@@ -38,7 +38,7 @@ To solve both of these issues, I used cubic interpolation to estimate the positi
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Basic Hakeye System/v1inter.gif" title="view 1 interpolated" class="view 1 animation" %}
+        {% include figure.html path="assets/img/Basic Hakeye System/v1inter.gif" title="view 1 interpolated" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/Basic Hakeye System/v2inter.gif" title="view 2 interpolated" class="img-fluid rounded z-depth-1" %}
@@ -79,7 +79,7 @@ First I had trouble since a majority of sift points were detected in the pattern
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Basic Hakeye System/sift features.png" title="sift features" class="view 1 animation" %}
+        {% include figure.html path="assets/img/Basic Hakeye System/sift features.png" title="sift features" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -87,7 +87,7 @@ Then I avoided using these points to compute the homography, which improved the 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Basic Hakeye System/sift features corrected.png" title="sift features corrected" %}
+        {% include figure.html path="assets/img/Basic Hakeye System/sift features corrected.png" title="sift features corrected" class="img-fluid rounded z-depth-1"%}
     </div>
 </div>
 
@@ -98,7 +98,14 @@ The other issue I had in computing this homography was that my matches are prett
 
 After this, I apply the cv2.triangulate points function on these points, to compute the 3D location of the points. I give homogenised points as an input and it uses the least squares method to triangulate location. Below is the output I got on the best of the video pairs I took.
 
-
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Basic Hakeye System/v13D.png" title="view 1 interpolated" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Basic Hakeye System/v23D.png" title="3d view" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ### Ground Truth
 
