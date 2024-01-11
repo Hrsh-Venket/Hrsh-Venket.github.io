@@ -2,7 +2,7 @@
 layout: page
 title: Basic Hawkeye system
 description: I did 3D ball tracking and reconstruction using simple stereo for CS-2467 Computer Vision.
-img: assets/img/12.jpg
+img: assets/img/Basic Hakeye System/Hawkeye icon.jpg
 importance: 1
 category: work
 related_publications:
@@ -23,7 +23,7 @@ To track the volleyball in 2D from each of my cameras, I used the Yolo v8 model.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Basic Hakeye System/v1anim.gif" title="view 1 animation" class="view 1 animation" %}
+        {% include figure.html path="assets/img/Basic Hakeye System/v1anim.gif" title="view 1 animation" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/Basic Hakeye System/v2anim.gif" title="view 2 animation" class="img-fluid rounded z-depth-1" %}
@@ -110,3 +110,7 @@ After this, I apply the cv2.triangulate points function on these points, to comp
 ### Ground Truth
 
 One issue with my approach is that I don’t have a ground truth to compare against. An approach I might apply to this later is to take a good simulation software like blender or a game engine like godot or unity and do a 3D animation and view it from 2 camera angles, trying to move backwards and do the reconstruction. With that approach I can compare perfectly for my reconstruction. Alternatively, as professor suggested, if I can add something to the ball that can make a mark on the final location, I can measure the final location, which I can use as a partial metric of accuracy of this system.
+
+### Further work
+
+As I mention above, there are significant practical limitations to this initial approach of mine which I need to solve. To imrpove accuracy enough to create a 
