@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A growing collection of your cool projects. These projects are available on my github if you want to go over the code. Everything here is free for anyone to use, and does not include any research I have done. 
 nav: true
 nav_order: 2
 display_categories: [work, fun]
