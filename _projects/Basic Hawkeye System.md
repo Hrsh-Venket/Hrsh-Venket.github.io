@@ -113,4 +113,4 @@ One issue with my approach is that I don’t have a ground truth to compare agai
 
 ### Further work
 
-As I mention above, there are significant practical limitations to this initial approach of mine which I need to solve. To imrpove accuracy enough to create a 
+As I mention above, there are significant practical limitations to this initial approach of mine which I need to solve. To improve accuracy enough to create a practical ball tracking system with amateurish apparatus. One idea is to make this tracking work with video from a single camera and calibration from 2d to 3D done with a known view. This makes both calibration and syncing of video much more convenient.
