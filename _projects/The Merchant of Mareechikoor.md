@@ -2,7 +2,7 @@
 layout: page
 title: The Merchant of Mareechikoor 
 description: A video game built in with the Godot Game engine
-img: assets/img/Basic Hakeye System/Hawkeye icon.jpg
+img: assets/img/The Merchant of Mareechikoor/title page.png
 importance: 1
 category: fun
 related_publications:
