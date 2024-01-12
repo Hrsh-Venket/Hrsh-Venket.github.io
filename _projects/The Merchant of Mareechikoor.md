@@ -10,3 +10,4 @@ related_publications:
 
 This was a fun project I worked on with Vishnu Menon, Jash Shah, and Devansh. Our story was a retelling of Othello in an indian context. It is a [Papers Please](https://papersplea.se/) style management game wherein you play in the fictionalised town of Mareechikoor in Kerala, India. We explore the recent dynamic of immigrants from the states of UP and Bihar being discriminated against as 'Bhai-log', just as Othello was disciminated against as a 'Moor'.
 
+For this, I implemented a title screen, a basic drag and drop system for items, and interfaced with the dialogue manager plugin. It was also an interesting learning experience for me as it was my first full project with object oriented programming.
