@@ -94,9 +94,9 @@ Then I avoided using these points to compute the homography, which improved the 
 The other issue I had in computing this homography was that my matches are pretty much coplanar (with the exception of the wheels. Ideally, if I could match with the rubik’s cube on the floor that would improve computation. 
 
 
-### Triangulate to convert to 3D
+### Triangulate to covert to 3D
 
-After this, I apply the cv2.triangulate points function on these points, to compute the 3D location of the points. I give homogenised points as an input and it uses the least squares method to triangulate location. Below is the output I got on the best of the video pairs I took.
+        output I got on the best of the video pairs I took.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
