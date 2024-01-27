@@ -23,10 +23,10 @@ Inituitively this is the line of decisions that we want to investigate in a game
 $$\frac{w_{i}}{n_{i}} + c \sqrt{\frac{\ln N_{i}}{n_{i}}}$$
 
 where:
-- $w_{i}$ stands for the number of wins after the i^{th} move
-- $n_{i}$ stands for the number of simulations of the node, or the extentent to which we have expanded past that node
-- $N_{i}$ stands for the total number of simulations after the parent (you think of it like n_{i} of the parent)
-- $c$ is is the exploration parameter. This is usually set to $\sqrt{2}$, but we can set this based on the extent on the tradeoff between new approaches and already successful approaches.
+$w_{i}$ stands for the number of wins after the $i^{th}$ move\\
+$n_{i}$ stands for the number of simulations of the node, or the extentent to which we have expanded past that node\\
+$N_{i}$ stands for the total number of simulations after the parent (you think of it like n_{i} of the parent)\\
+$c$ is is the exploration parameter. This is usually set to $\sqrt{2}$, but we can set this based on the extent on the tradeoff between new approaches and already successful approaches.
 
 ### Expansion
 
