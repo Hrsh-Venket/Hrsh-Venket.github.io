@@ -12,11 +12,11 @@ This was a fun project I worked on with Vishnu Menon, Jash Shah, and Devansh. Ou
 
 For this, I implemented a title screen, a basic drag and drop system for items, and interfaced with the dialogue manager plugin. It was also an interesting learning experience for me as it was my first full project with object oriented programming.
 
-<div class="row justify-content-sm-center">
+**<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/The Merchant of Mareechikoor/view of game.png" title="sift features corrected" class="img-fluid rounded z-depth-1"%}
     </div>
-</div>
+</div>**
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
