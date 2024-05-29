@@ -1,18 +1,17 @@
 ---
 layout: page
-title: Time Series Analysis for Electricity Load Forecasting
-description: A report on work I did with Pranit Sinha on contest for electricity load forecasting.
-img: assets/img/The Merchant of Mareechikoor/title page.png
+title: Electricity Load Forecasting
+description: Report on work I did with Pranit Sinha under Debayan Gupta on Time Series Analysis for an ML competition on Electricity Load Forecasting 
+img: assets/img/Electricity load forecasting/Time series.png
 importance: 1
 category: work
 related_publications:
 ---
+In this report 'ISM' report refers to the study we did under Professor Debayan Gupta.
 
-Link to Github: https://github.com/pranit-sinha/eeg
+For this ISM we participated in an [ML competition](https://thinkonward.com/app/c/challenges/ghosts-of-holidays-past). Beyond the learning associated with participation, our goal coming into the ISM was to place top 15 among what we expected to be 150 participants. We eventually placed 24th out of 200. We further were able to achieve better accuracy 10 days after the competition had ended, which would have likely put us in the top 10.
 
-For this ISM we participated in an ML competition. Beyond the learning associated with participation, our goal coming into the ISM was to place top 15 among what we expected to be 150 participants. We eventually placed 24th out of 200. We further were able to achieve better accuracy 10 days after the competition had ended, which would have likely put us in the top 10.
-
-# Problem
+## Problem
 
 Our problem was Electricity Load Forecasting:
 
@@ -20,7 +19,7 @@ Given electricity usage data for 201 houses at a granularity of 15 minutes from 
 
 Our goal was to predict the best 4 hour window from 5 PM to 12 PM in the last 10 days of December, where ‘best’ is the time that minimises total electricity use in House 1 of our dataset.
 
-# Solution
+## Solution
 
 We treated the problem as 2 sub problems. First was the task of prediction, and second was the task of finding the best 4 hour window.
 
@@ -28,7 +27,7 @@ We solved the second problem by writing a few simple lines of code to find the m
 
 The first problem however proved to be a lot more complicated.
 
-## Model
+### Model
 
 We first looked at which models performed well with Tabular Time series Data, finally arriving at Gradient Boosted Decision Trees (XGBoost). In many similar competitions for load forecasting (cf. this link) it outperformed LSTMs and other common models used for Time series Analysis.
 
@@ -39,7 +38,7 @@ Since it can also be parallelised the model can train relatively fast on our lar
 
 As a baseline, we fed all numerical data from the dataset into the classifier ‘as-is’. While, as expected our accuracy was poor throughout (MSE around 0.5 on average), our accuracy was lower for certain periods of the year, especially the last 10 days of the year.
 
-To that end, we guessed that this was a near out of distribution problem. We expect that this is because we are predicting in ‘christmas season’ a holiday time which looks very different from any other time of year in terms of electricity usage. 
+To that end, we guessed that this was a near out of distribution problem. We expect that this is because we are predicting in ‘christmas season’ a holiday time which looks very different from any other time of year in terms of electricity usage.
 
 We also noticed that our naive baseline was performing worse than simply predicting that the last ten days would all be identical to December 21st. This is because of issues with datetime encoding. While originally our data was given to us as year, month, day, hour, minute, encoding these independently did not allow our model to learn the relationship between them.
 
@@ -57,7 +56,7 @@ Given these improvements for datetime encoding, we had substantially better accu
 
 As our next step, we realised that to make the model significantly weight ‘house’ information we could not simply give each house a random number from 1 to 200. This is mainly because there was no relationship between house number and how useful it was at prediction. Further, one-hot encoding houses would still not make this be useful since no one column would be given high feature importance since information from these columns would be so sparse.
 
-Thereby, we decided to use a similarity metric to give each house a value based on how similar it was to the target house we needed to do prediction on. Our metric for this was simply euclidian distance between electricity usage on each interval across the year. This gave the ‘house’ column some meaningful information: how similar the given house was to our target house. 
+Thereby, we decided to use a similarity metric to give each house a value based on how similar it was to the target house we needed to do prediction on. Our metric for this was simply euclidian distance between electricity usage on each interval across the year. This gave the ‘house’ column some meaningful information: how similar the given house was to our target house.
 
 This encoding alone substantially improved our performance throughout the year.
 
