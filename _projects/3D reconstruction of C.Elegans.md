@@ -2,7 +2,7 @@
 layout: page
 title: 3D reconstruction of C.Elegans 
 description: Pipeline for 3D reconstruction of microscopic roundworm c.elegans using Spinning Disc Confocal Microscope images
-img: assets/img/Electricity load forecasting/Time series.png
+img: assets/img/3D Reconstruction of SDCM images of C Elegans/logo.jpg
 importance: 1
 category: work
 related_publications:
@@ -24,7 +24,6 @@ related_publications:
 
 - input stack
 - input trimap trimap
-
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -127,8 +126,13 @@ While this was part of my original plan, I discarded this step
 
 ### Further Denoising
 
-- Statistical outlier detection
-- (show point cloud)
+- Statistical outlier detection where we can remove points more than n standard deviations away from the centre of each pcl cluster.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/3D Reconstruction of SDCM images of C Elegans/point cloud.jpg" title="pcl image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ### Stage 5: Mesh generation
 
@@ -143,6 +147,16 @@ While this was part of my original plan, I discarded this step
 The point cloud is in world coordinate space (x, y, z, in um)
 
 We can use the above to do measurements on the image in the 3D space
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/3D Reconstruction of SDCM images of C Elegans/mesh.jpg" title="mesh view 1" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/3D Reconstruction of SDCM images of C Elegans/mesh1.jpg" title="mesh view 2" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 
 ### Further steps
 - benchmarking against a larger dataset or against a true 3D benchmark to measure accuracy
