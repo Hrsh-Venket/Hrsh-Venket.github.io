@@ -8,6 +8,20 @@ category: work
 related_publications:
 ---
 
+This project was motivated as a way to help a PhD student at a Biology lab at Ashoka University with a problem she was having that required her to manually measure thousands of samples for her work. By the time I finished solving this problem, she had finished manually measuring all samples and moved onto a later stage of her PhD, but I think my solution can serve to be a good reference for those who work on this problem in the future.
+
+The task was to measure the curvature and thickness of the microscopic roundwork C. elegans. The complexity of this task is as follows: (1) Measurements must be done from a stack of orthogonally projected 2D image ("slices") of a 3D worm (see GIF below for the images in sequence) (2) Curvature and thickness of the intestine must be measured relative to the worm body (i.e. the twisted shape of the worm should not count towards the curvature of it's intestine. Curvature should be calculated as though the worm was not twisted and laid flat).
+
+The PhD student's work involved roughly measuring the worm in different 2D images and at different points and taking an average result. She further labelled curvature with a rough heuristic of how curved a given worm was.
+
+The issue with this method is that it entirely ignores curvature and thickness in the 3D dimension. Further, given that certain parts of the image are unclear in 2D, it can be difficult to tell if they are part of the intestine or not, meaning useful information may be lost. We can estimate this information from stacks adjacent to the target image.
+
+For this project, I aim to create a multi stage pipeline to move from an input z-stack to 3d representation of the microscopic worm c elegans from which measurements can be made.
+
+### Limitations
+I have only one fully labeled image My method and any changing must be based on general features of the intestine not on this specific image. Hence, I tried to visually fine tune my work on unlabelled images, but test on my labeled stack.
+I also only have a labelled trimap (label of 1, 0, and unknown at each point) as it is difficult to get a complete ground truth in 3D
+
 ### Aim
 
 **Given**: florescent spinning disk confocal microscope scan of a c.elegans sample, 
