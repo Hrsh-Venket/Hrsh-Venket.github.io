@@ -17,6 +17,6 @@ social: true  # includes social icons at the bottom of the page
 ---
 Hi, I'm Hrsh.
 
-I'm an ML and Computer Vision Enthusiast from Chennai, India. I'm a 4th year Computer Science student at [Ashoka University](https://www.ashoka.edu.in/) occasionally dabbling in math. I am currently working as an intern at the [Mphasis Lab](https://ml2ct.ashoka.edu.in/en/) and working on a Multi Camera Multi Object/Person tracking pipeline.
+I'm currently doing my Masters in AI at The Hong Kong University of Science and Technology. I enjoy solving problems. Most of the problems I've solved have been with Computer Vision and ML. I have experience doing remote sensing research. I'm now looking for engineering roles working on any interesting problems I can contribute to solving.
 
-In my free time you can find me playing Volleyball, Dungeons and Dragons (among other board games and RPGs), and practicing krav maga.
+In my free time you can find me playing Board Games (Too much Terraforming Mars Lately) and the videogame TeamFight Tactics, or exercising and practicing Krav Maga.
