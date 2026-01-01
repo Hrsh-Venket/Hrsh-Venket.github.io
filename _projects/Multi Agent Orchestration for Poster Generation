@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Agent Orchestration for Poster-Generation
-description: Orchestrating multiple agents for a goal
-img: assets/img/Multi-Agent-Poster-Gen/langgraph.png
+description: Orchestrating multiple agents for a for creative poster generation
+img: assets/img/Mutli-Agent-Poster-Gen/langgraph.png
 importance: 1
 category: work
 related_publications: null
