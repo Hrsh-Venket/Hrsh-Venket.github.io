@@ -8,8 +8,6 @@ category: work
 related_publications: null
 ---
 
-# Multi-Agent Orchestration for Creative Poster Generation
-
 A modular, agent-based system for generating creative posters using LangGraph orchestration. This project demonstrates how breaking down complex tasks into specialized agents can produce superior results compared to monolithic approaches.
 
 ## Architecture
