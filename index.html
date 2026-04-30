@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hrsh Venket</title>
+  <meta name="description" content="Personal site of Hrsh Venket.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="/">Hrsh Venket</a>
+      <nav>
+        <a href="/" class="active">profile</a>
+        <a href="/projects/">projects</a>
+        <a href="/blog/">blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="profile">
+        <img src="/assets/img/prof_pic.jpg" alt="Hrsh Venket">
+        <div class="meta">
+          <h1>Hi, I'm Hrsh.</h1>
+          <p>I'm doing my Masters in AI at The Hong Kong University of Science and Technology. I enjoy solving problems — most of them have been in computer vision and ML, with some remote-sensing research mixed in. I'm currently looking for engineering roles working on interesting problems.</p>
+          <p>Outside of work I play board games (too much Terraforming Mars lately) and TeamFight Tactics, exercise, and practice Krav Maga.</p>
+          <a class="cv-button" href="/assets/pdf/CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </section>
+
+      <section class="socials">
+        <a href="mailto:hrsh.venket@gmail.com">email</a>
+        <a href="https://github.com/Hrsh-Venket" target="_blank" rel="noopener">github</a>
+        <a href="https://instagram.com/hrsh_venket" target="_blank" rel="noopener">instagram</a>
+      </section>
+    </main>
+
+    <footer class="site">
+      &copy; <span id="year"></span> Hrsh Venket
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

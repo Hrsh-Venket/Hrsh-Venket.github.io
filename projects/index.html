@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog · Hrsh Venket</title>
+  <title>Projects · Hrsh Venket</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -12,13 +12,13 @@
       <a class="brand" href="/">Hrsh Venket</a>
       <nav>
         <a href="/">profile</a>
-        <a href="/projects/">projects</a>
-        <a href="/blog/" class="active">blog</a>
+        <a href="/projects/" class="active">projects</a>
+        <a href="/blog/">blog</a>
       </nav>
     </header>
 
     <main>
-      <h1>Blog</h1>
+      <h1>Projects</h1>
       <ul class="listing" id="list">
         <li><span class="desc">Loading…</span></li>
       </ul>
@@ -32,11 +32,11 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     renderListing({
-      manifestUrl: '/blog/posts.json',
-      postsBaseUrl: '/blog/posts/',
-      postViewerUrl: '/blog/post.html',
+      manifestUrl: '/projects/posts.json',
+      postsBaseUrl: '/projects/posts/',
+      postViewerUrl: '/projects/post.html',
       listEl: document.getElementById('list'),
-      emptyText: 'No posts yet.'
+      emptyText: 'No projects yet.'
     });
   </script>
 </body>
