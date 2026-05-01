@@ -7,6 +7,7 @@ tags: [meta]
 
 This is a sample post. It demonstrates the format expected by the blog renderer.
 
+
 ## How to add a post
 
 1. Create a markdown file at `/blog/posts/<slug>.md` with frontmatter at the top:
