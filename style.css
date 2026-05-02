@@ -112,6 +112,18 @@ p { margin: 0 0 1rem; }
 .socials a { margin-right: 1rem; color: var(--muted); }
 .socials a:hover { color: var(--fg); }
 
+/* GitHub contribution chart */
+.gh-chart {
+  width: 100%;
+  overflow-x: auto;
+}
+.gh-chart img {
+  width: 100%;
+  height: auto;
+  display: block;
+  min-width: 0;
+}
+
 /* Listing (notashes-style) */
 ul.listing {
   list-style: none;
