@@ -18,7 +18,7 @@ At the same time, using LLMs to generate text makes it tougher to understand for
 In terms of technical feasability, the task of text generation is fairly straightforward. The initial limitations have been surpassed as LLMs able to make 'tool-calls' to use the internet, take screenshots, read different sources like pdfs. The ability of LLMs to do general low-reasoning text-generation is high and increasing as researchers continue to innovate. 
 
 Business viability is also excellent. Cost per tokens is steadily falling and due to distillation, smaller models are becoming more capable. 
-![](assets/img/blog/cost-per-token-decreasing.png)
+![](/assets/img/blog/cost-per-token-decreasing.png)
 Further, AI for text generation by some users incentives (nay necessitates) others to use LLMs to parse needlessly verbose text. Coined 'AI slop' by many users describe AI generated content social media. From this, it is clear that there is a decoupling of user experience from business viability. AI text generation begets more AI text generation, leading to better business outcomes and worse user experience. 
 
 Overall, I think this result is bleak and is a sign of a market heading in a bad direction. One learning I have from this course is that in the long term, aligning business interests with user experience is the best solution to long term growth and an improved product. In the case of LLMs for text generation, business viability is tied to making the user experience substantially worse for everyday users. As long as they align, experiences for the average user will worsen.
