@@ -1,8 +1,8 @@
 ---
-title: TFT App
+title: tft app
 date: 2026-05-06
-description: Advanced TFT Analytics Tool supporting NL2SQL
-tags: [CICD, PostgreSQL, NL2SQL, HCI]
+description: advanced tft analytics tool supporting nl2sql
+tags: [cicd, postgresql, nl2sql, hci]
 ---
 
 # Introduction
